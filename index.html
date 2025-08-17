@@ -27,8 +27,9 @@
                 <input type="password" id="konfirmasi password" name="konfirm-pw" required>
         
             <input type="submit">
+    <br><br>
 <hr> <hr>
-
+    <br>
 <!--From Pribadi-->
 
 </form>
@@ -36,7 +37,7 @@
     <fieldset>
         
         <legend>Informasi  Pribadi</legend>
-
+            <br>
             <label for="dob">Tanggal Lahir:
                 </label>
             <input type="date" id="dob" name="dob"><br><br>
@@ -48,9 +49,60 @@
                 </label><br>
             <input type="radio" id="Wanita" name="jenis_kelamin" value="Wanita">
                 <label for="wanita">Wanita
-                </label><br>
+                </label><br><br>
+
+        <legend>Pilihan Minat</legend>
+
+            <input type="checkbox" id="html" name="interest" value="html">
+                    <label for="html">HTML
+                    </label><br>
+            <input type="checkbox" id="css" name="interest" value="css">
+                    <label for="css">CSS
+                    </label><br>
+            <input type="checkbox" id="java_script" name="interest" value="java_script">
+                    <label for="java_script">Java_Script
+                    </label><br>
+            <input type="checkbox" id="php" name="interest" value="php">
+                    <label for="php">PHP
+                    </label><br><br>
+
+        <legend>Negara</legend>
+    
+            <label for="country">Pilih Negara:</label>
+            
+            <select id="country" name="country">
+
+                    <option value="">--Pilih--</option>
+                <optgroup label="Asia">
+                    <option value="id">Indonesia</option>
+                    <option value="my">Malaysia</option>
+                    <option value="vn">Vietnam</option>
+                </optgroup>
+
+                    <optgroup label="Europe">
+
+                    <option value="de">Jerman</option>
+                    <option value="fr">Prancis</option>
+                    <option value="it">Italia</option>
+                </optgroup>
+
+                <optgroup label="Timur Tengah">
+                    <option value="iq">Iraq</option>
+                    <option value="ps">Palestina</option>
+                    <option value="qa">Qatar</option>
+                </optgroup>
+
+            </select>
 
     </fieldset>
+        <br>
+            <label for="comments">Komentar Anda:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+        <br>
+
+        <button type="submit">Kirim Data</button>
+            <button type="reset">Bersihkan Formulir</button>
+
 
 </form> 
 
