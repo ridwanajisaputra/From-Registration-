@@ -10,101 +10,77 @@
     <h2>Formulir Registrasi</h2>
 
 <form action="#">
-
-<!--Input From-->
-
-<h3>Masukan Informasi</h3>
-
-<form action="#">
-        <label for="email">Email:
-            </label>
-                <input type="email" id="email" name="email"><br><br>
-        <label for="pwd">Password:
-            </label>
-                <input type="password" id="pwd" name="pwd"><br><br>
-        <label for="psw-repeat">Konfirmasi Password
-            </label>
-                <input type="password" id="konfirmasi password" name="konfirm-pw" required>
-        
-            <input type="submit">
-    <br><br>
-<hr> <hr>
-    <br>
-<!--From Pribadi-->
-
-</form>
-
     <fieldset>
-        
-        <legend>Informasi  Pribadi</legend>
-            <br>
-            <label for="dob">Tanggal Lahir:
-                </label>
-            <input type="date" id="dob" name="dob"><br><br>
-
-        <legend>Jenis Kelamin</legend>
-
-            <input type="radio" id="Pria" name="jenis_kelamin" value="pria">
-                <label for="pria">Pria
-                </label><br>
-            <input type="radio" id="Wanita" name="jenis_kelamin" value="Wanita">
-                <label for="wanita">Wanita
-                </label><br><br>
-
-        <legend>Pilihan Minat</legend>
-
-            <input type="checkbox" id="html" name="interest" value="html">
-                    <label for="html">HTML
-                    </label><br>
-            <input type="checkbox" id="css" name="interest" value="css">
-                    <label for="css">CSS
-                    </label><br>
-            <input type="checkbox" id="java_script" name="interest" value="java_script">
-                    <label for="java_script">Java_Script
-                    </label><br>
-            <input type="checkbox" id="php" name="interest" value="php">
-                    <label for="php">PHP
-                    </label><br><br>
-
-        <legend>Negara</legend>
-    
-            <label for="country">Pilih Negara:</label>
-            
-            <select id="country" name="country">
-
-                    <option value="">--Pilih--</option>
-                <optgroup label="Asia">
-                    <option value="id">Indonesia</option>
-                    <option value="my">Malaysia</option>
-                    <option value="vn">Vietnam</option>
-                </optgroup>
-
-                    <optgroup label="Europe">
-
-                    <option value="de">Jerman</option>
-                    <option value="fr">Prancis</option>
-                    <option value="it">Italia</option>
-                </optgroup>
-
-                <optgroup label="Timur Tengah">
-                    <option value="iq">Iraq</option>
-                    <option value="ps">Palestina</option>
-                    <option value="qa">Qatar</option>
-                </optgroup>
-
-            </select>
-
+        <legend>Masukan Informasi</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukan email anda "required>
+        <br><br>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" placeholder="Masukan Password "required><br><br>
+        <label for="psw-repeat">Konfirmasi Password</label>
+        <input type="password" id="konfirmasi password" name="konfirm-pw" placeholder="Ulangi Password" required>
     </fieldset>
-        <br>
-            <label for="comments">Komentar Anda:</label><br>
-                <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
-        <br>
+    <fieldset>
+        <legend>Informasi  Pribadi</legend>
+    <br>
+    <label for="tanggal-lahir">Tanggal Lahir:</label>
+    <input type="date" id="dob" name="tanggal-lahir"><br><br>
+    
+    <label>Jenis Kelamin</label>
+    <br>
+    <input type="radio" id="Pria" name="jenis_kelamin" value="pria">
+    <label for="pria">Pria</label>
+    <input type="radio" id="Wanita" name="jenis_kelamin" value="Wanita">
+    <label for="wanita">Wanita</label>
+    <br><br>
 
-        <button type="submit">Kirim Data</button>
-            <button type="reset">Bersihkan Formulir</button>
-
-
-</form> 
+    <label>Pilihan Minat</label>
+    <br>
+    <input type="checkbox" id="html" name="interest" value="html">
+    <label for="html">HTML</label>
+    <br>
+    <input type="checkbox" id="css" name="interest" value="css">
+    <label for="css">CSS</label>    
+    <br>
+    <input type="checkbox" id="java_script" name="interest" value="java_script">
+    <label for="java_script">Java_Script</label>
+    <br>
+    <input type="checkbox" id="php" name="interest" value="php">
+    <label for="php">PHP
+    </label>
+    <br><br>
+    
+    <label>Negara</label>
+    <label for="country">Pilih Negara:</label>
+    <select id="country" name="country">
+        <option value="">--Pilih--</option>
+        <optgroup label="Asia">
+            <option value="id">Indonesia</option>
+            <option value="my">Malaysia</option>
+            <option value="vn">Vietnam</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="de">Jerman</option>
+            <option value="fr">Prancis</option>
+            <option value="it">Italia</option>
+        </optgroup>
+        <optgroup label="Timur Tengah">
+            <option value="iq">Iraq</option>
+            <option value="ps">Palestina</option>
+            <option value="qa">Qatar</option>
+        </optgroup>
+    </select>
+    </fieldset>
+    <br>
+    <fieldset>
+    <legend>Masukan Pesan Anda</legend>
+    <label for="comments">Komentar Anda:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+    </fieldset>
+<br>
+<button type="submit">Kirim Data</button>
+<button type="reset">Bersihkan Formulir</button>
+</form>
 
 </body>
 </html>
